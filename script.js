@@ -1,14 +1,13 @@
 console.log("✅ Script loaded!");
 
 document.addEventListener("DOMContentLoaded", () => {
-  // ===============================
-  // ✅ HOMEPAGE SCROLL ANIMATION
-  // ===============================
+  //homepage animation
+  //referenced from this youtube video: https://www.youtube.com/watch?v=KE2NeszFQl0&t=314s
 
   const spotlightSection = document.querySelector(".spotlight");
 
   if (spotlightSection) {
-    console.log("✅ Spotlight section found - initializing GSAP");
+    console.log("Spotlight section found - initializing GSAP");
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -77,11 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ===============================
-  // ✅ GALLERY SCRIPT
-  // ===============================
+  //gallery
 
-  console.log("✅ Gallery script active");
+  console.log("Gallery script active");
 
   const gallery = document.querySelector(".gallery");
   const heroImg = document.getElementById("hero-img");
@@ -115,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img.alt = `${city} ${index + 1}`;
 
       img.onerror = () => {
-        console.error(`❌ Failed to load image: ${src}`);
+        console.error(`Failed to load image: ${src}`);
       };
 
       thumbDiv.appendChild(img);
@@ -161,6 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   } else {
-    console.log("ℹ️ No gallery found on this page");
+    console.log(" No gallery found on this page");//error handling
   }
 });
