@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hong Kong — Radhika Malpani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav class="side-nav">
+  <a href="./index.html" class="side-name">Radhika Malpani</a>
+  <div class="side-links">
+    <a href="./fairbanks.html">Fairbanks</a>
+    <a href="./jaipur.html">Jaipur</a>
+    <a href="./hongkong.html" class="active">Hong Kong</a>
+  </div>
+  
+  <div class="location-info">
+    <h3>Hong Kong</h3>
+    <p class="coords">22.3193° N<br>114.1694° E</p>
+    <p class="meta">December 2024</p>
+    <p class="about">Where towering skyscrapers meet misty mountains, and neon lights reflect off the harbor in Asia's most dynamic city.</p>
+  </div>
+</nav>
+
+<main class="gallery" data-city="hk">
+  <div class="hero">
+    <img id="hero-img" src="./photos/hk/hk1.jpg" alt="Hong Kong">
+  </div>
+  <div id="thumbs" class="thumbs-grid"></div>
+</main>
+
+<div id="lightbox" class="lightbox">
+  <button class="arrow left">‹</button>
+  <img id="lightbox-img" alt="Full size">
+  <button class="arrow right">›</button>
+</div>
+
+<script type="module" src="./script.js"></script>
+</body>
+</html>
