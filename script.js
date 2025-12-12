@@ -1,4 +1,4 @@
-console.log("✅ Script loaded!");
+console.log("Script loaded");
 
 document.addEventListener("DOMContentLoaded", () => {
   //homepage animation
